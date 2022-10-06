@@ -36,7 +36,6 @@ nav {
     }
 
 .lang-menu {
-    width: 120px;
     position: absolute;
     top: 40px;
     right: 16px;
@@ -46,7 +45,7 @@ nav {
     .lang-menu .selected-lang {
         display: flex;
         justify-content: space-between;
-        line-height: 1;
+        width: 110px;
         cursor: pointer;
     }
 
@@ -61,7 +60,7 @@ nav {
         }
 
     .lang-menu ul {
-        margin: 0px;
+        margin: 8px;
         padding: 0;
         display: none;
         background-color: #fff;
@@ -99,7 +98,7 @@ nav {
                 display: inline-block;
                 width: 25px;
                 height: 25px;
-                vertical-align: middle;
+                vertical-align: top;
                 margin-right: 10px;
                 background-size: contain;
                 background-repeat: no-repeat;
@@ -114,6 +113,8 @@ nav {
 }
 
 
-.lang-menu:hover ul {
+.lang-menu:active ul,
+.lang-menu:hover ul
+{
     display: block;
 }

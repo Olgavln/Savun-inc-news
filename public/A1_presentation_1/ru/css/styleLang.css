@@ -114,6 +114,8 @@ nav {
 }
 
 
-.lang-menu:hover ul {
+.lang-menu:active ul,
+.lang-menu:hover ul
+{
     display: block;
 }

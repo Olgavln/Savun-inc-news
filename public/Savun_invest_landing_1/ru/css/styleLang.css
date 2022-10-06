@@ -36,32 +36,34 @@ nav {
     }
 
 .lang-menu {
-    width: 120px;
     position: absolute;
     top: 40px;
     right: 16px;
     font-size: 18px;
+    
 }
 
     .lang-menu .selected-lang {
         display: flex;
         justify-content: space-between;
-        line-height: 1;
+        width: 115px;
+        align-items: center;
+
         cursor: pointer;
     }
 
         .lang-menu .selected-lang:before {
             content: '';
             display: inline-block;
-            width: 30px;
-            height: 17px;
+            width: 32px;
+            height: 32px;
             background-image: url(https://upload.wikimedia.org/wikipedia/en/thumb/f/f3/Flag_of_Russia.svg/1280px-Flag_of_Russia.svg.png);
             background-size: contain;
             background-repeat: no-repeat;
         }
 
     .lang-menu ul {
-        margin: 0px;
+        margin: 8px;
         padding: 0;
         display: none;
         background-color: #fff;
@@ -99,7 +101,7 @@ nav {
                 display: inline-block;
                 width: 25px;
                 height: 25px;
-                vertical-align: middle;
+                vertical-align: text-top;
                 margin-right: 10px;
                 background-size: contain;
                 background-repeat: no-repeat;
@@ -114,6 +116,8 @@ nav {
 }
 
 
-.lang-menu:hover ul {
+.lang-menu:active ul,
+.lang-menu:hover ul
+{
     display: block;
 }

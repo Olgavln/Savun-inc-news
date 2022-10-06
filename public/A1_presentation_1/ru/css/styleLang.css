@@ -1,0 +1,119 @@
+/* roboto-regular - latin_cyrillic */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 100;
+    src: local(''), url('../fonts/roboto-v30-latin_cyrillic-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/roboto-v30-latin_cyrillic-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    height: 0px;
+    padding: 20px 0;
+}
+
+nav {
+    width: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 100px;
+}
+
+    .logo img {
+        width: 100px;
+    }
+
+.lang-menu {
+    width: 120px;
+    position: absolute;
+    top: 40px;
+    right: 16px;
+    font-size: 18px;
+}
+
+    .lang-menu .selected-lang {
+        display: flex;
+        justify-content: space-between;
+        line-height: 1;
+        cursor: pointer;
+    }
+
+        .lang-menu .selected-lang:before {
+            content: '';
+            display: inline-block;
+            width: 30px;
+            height: 17px;
+            background-image: url(https://www.countryflags.com/wp-content/uploads/russia-flag-png-large.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
+    .lang-menu ul {
+        margin: 0px;
+        padding: 0;
+        display: none;
+        background-color: #fff;
+        border: 1px solid #f8f8f8;
+        position: absolute;
+        top: 25px;
+        left: -10px;
+        right: 0px;
+        width: 155px;
+        border-radius: 5px;
+        box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    }
+
+
+        .lang-menu ul li {
+            list-style: none;
+            text-align: left;
+            display: flex;
+            justify-content: space-between;
+        }
+
+            .lang-menu ul li a {
+                text-decoration: none;
+                width: 125px;
+                padding: 5px 10px;
+                display: block;
+            }
+
+            .lang-menu ul li:hover {
+                background-color: #f2f2f2;
+            }
+
+            .lang-menu ul li a:before {
+                content: '';
+                display: inline-block;
+                width: 25px;
+                height: 25px;
+                vertical-align: middle;
+                margin-right: 10px;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+
+.ru:before {
+    background-image: url(https://www.countryflags.com/wp-content/uploads/russia-flag-png-large.png);
+}
+
+.en:before {
+    background-image: url(https://www.countryflags.com/wp-content/uploads/united-states-of-america-flag-png-large.png);
+}
+
+
+.lang-menu:hover ul {
+    display: block;
+}
